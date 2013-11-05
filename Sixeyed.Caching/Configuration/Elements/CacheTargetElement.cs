@@ -82,7 +82,7 @@ namespace Sixeyed.Caching.Configuration
         /// <remarks>
         /// Defaults to <see cref="SerializationFormat.Json"/>
         /// </remarks>
-        [ConfigurationProperty(SettingName.CacheType, DefaultValue = SerializationFormat.Json)]
+        [ConfigurationProperty(SettingName.SerializationFormat, DefaultValue = SerializationFormat.Json)]
         public SerializationFormat SerializationFormat { get; set; }
 
         /// <summary>
@@ -125,6 +125,11 @@ namespace Sixeyed.Caching.Configuration
             /// cacheType
             /// </summary>
             public const string CacheType = "cacheType";
+
+            /// <summary>
+            /// serializationFormat
+            /// </summary>
+            public const string SerializationFormat = "serializationFormat";
         }
     }
 }
